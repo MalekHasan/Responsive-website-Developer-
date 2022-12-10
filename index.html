@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>LOGO</h1>
+      </div>
+      <div class="menu">
+        <i class="fas fa-bars"> </i>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Footer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+        <div class="content">
+            <div class="icon">
+              <a href="#" class="fab fa-facebook-square"></a>
+              <a href="#" class="fab fa-twitter-square"></a>
+              <a href="#" class="fab fa-instagram-square"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h2>become a <span>Web Designer</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ipsum
+              nam voluptatum cum voluptate itaque dolor similique aspernatur quos,
+              saepe atque nisi tempora sapiente, commodi omnis tempore blanditiis.
+              Quaerat, doloremque.
+            </p>
+            <a href="#"><button>lets get started</button></a>
+        </div>
+
+      <div class="image">
+        <img src="Responsive-pana.svg" alt="">
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu .fa-bars").click(function () {
+          $(this).toggleClass("far fa-times");
+          $("nav").toggleClass("toggle");
+        });
+      });
+    </script>
+  </body>
+</html>
